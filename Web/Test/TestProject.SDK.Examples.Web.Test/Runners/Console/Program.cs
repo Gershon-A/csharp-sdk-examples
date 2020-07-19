@@ -1,4 +1,5 @@
-﻿using System.Reflection;
+﻿using System;
+using System.Reflection;
 using TestProject.Common.Enums;
 using TestProject.SDK.Examples.Web.Test;
 
@@ -6,7 +7,7 @@ namespace TestProject.SDK.Examples.Web.Runners.Console
 {
 	class Program
 	{
-		private static string DevToken = "YOUR_DEV_TOKEN";
+		private static string DevToken = Environment.GetEnvironmentVariable("TP_DEV_TOKEN");
 		private static AutomatedBrowserType BrowserType = AutomatedBrowserType.Chrome; // Specify the target browser
 
 		static void Main(string[] args)
