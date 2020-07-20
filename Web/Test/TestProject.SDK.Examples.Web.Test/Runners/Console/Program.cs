@@ -22,8 +22,8 @@ namespace TestProject.SDK.Examples.Web.Runners.Console
 				* This is only required when running the action proxy in Debug mode via IDE 
 				* This not not needed when running from TestProject platform
 				*/
-				/* Assembly.LoadFrom("AddonProxy.dll");
-				runner.Run(new ProxyTest(), true); */
+				// Assembly.LoadFrom("AddonProxy.dll");
+				// runner.Run(new ProxyTest(), true); 
 			}
 		}
 	}
